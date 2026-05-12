@@ -79,7 +79,7 @@ class _SplashScreenState extends State<SplashScreen>
                 ),
               ),
 
-              const SizedBox(height: 70),
+              const SizedBox(height: 50),
 
               // IMAGE
               SizedBox(
@@ -90,7 +90,7 @@ class _SplashScreenState extends State<SplashScreen>
                 ),
               ),
 
-              const SizedBox(height: 80),
+              const SizedBox(height: 60),
 
               // DESCRIPTION
               const Text(
@@ -130,7 +130,7 @@ class _SplashScreenState extends State<SplashScreen>
                 ),
               ),
 
-              const SizedBox(height: 40),
+              const SizedBox(height: 10),
             ],
           ),
         ),

@@ -138,7 +138,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Vous n'avez pas de compte? ",
+                      "Pas de compte? ",
                       style: AppTextStyles.bodyMedium,
                     ),
                     TextButton(

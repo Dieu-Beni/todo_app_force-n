@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:task_manager/core/utils/widgets/TaskCard_Widget.dart';
 import '../../../../core/theme/app_theme.dart';
 import '../../domain/entities/task.dart';
 import '../providers/task_provider.dart';
@@ -88,6 +89,8 @@ class _TaskListScreenState extends ConsumerState<TaskListScreen> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black,
+        shape: const CircleBorder(),
         onPressed: () {
           Navigator.push(
             context,
@@ -158,7 +161,10 @@ class _TaskListScreenState extends ConsumerState<TaskListScreen> {
         itemCount: tasks.length,
         itemBuilder: (context, index) {
           final task = tasks[index];
-          return _TaskCard(task: task);
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 14),
+            child: TaskCardWidget(task: task),
+          );
         },
       ),
     );
